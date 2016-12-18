@@ -74,7 +74,7 @@ table {
   position: relative;
   .content-wrapper {
     margin:0 auto;
-    padding: 1em;
+    padding: 1em 5em;
     @media( min-width:768px) {
       max-width: 768px;
     }
@@ -131,5 +131,26 @@ table {
   img {
     width: 100%;
   }
+  }
+}
+
+aside.left {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: rotate(-90deg);
+  font-size: 3rem;
+}
+aside.right {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: rotate(90deg);
+  font-size: 3rem;
+}
+
+aside.left, aside.right {
+  @media (max-width: 991px) {
+    display: none;
   }
 }
