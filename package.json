@@ -1,0 +1,25 @@
+{
+  "name": "transform-splash",
+  "version": "0.0.1",
+  "description": "a simple parallax style transform on a splash image",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "node-sass style.scss style.min.css --output-style compressed --watch",
+    "build:js": "browserify index.js -o index.bundle.js -t [ babelify --presets [ es2015 ] ]"
+  },
+  "keywords": [
+    "scss",
+    "javascript"
+  ],
+  "author": "Gerard Simpson",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "6.18.0",
+    "browserify": "^13.1.1",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.2",
+    "node-sass": "^4.0.0",
+    "watchify": "^3.8.0",
+    "webpack": "^1.14.0"
+  }
+}
