@@ -53,6 +53,18 @@ function parallax() {
  */
 initialise();
 
+(0, _jquery2.default)(document).ready(function () {
+  console.log('document loaded');
+});
+
+(0, _jquery2.default)(window).on('load', function () {
+  console.log("Window Loaded");
+});
+
+window.onload(function () {
+  console.log("window onload JS");
+});
+
 },{"jquery":2,"lodash/throttle":14}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.1.1
